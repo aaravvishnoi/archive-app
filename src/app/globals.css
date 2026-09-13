@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #1b1e22;
+  --surface: #23262b;
+  --surface-raised: #2b2f35;
+  --hairline: #383c42;
+  --hairline-soft: #2f333a;
+  --paper: #ece7dd;
+  --paper-dim: #a3a29c;
+  --brass: #c9a24b;
+  --brass-bright: #ddb85f;
+  --brick: #b45c4f;
+  --brick-bright: #c96f61;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-hairline: var(--hairline);
+  --color-hairline-soft: var(--hairline-soft);
+  --color-paper: var(--paper);
+  --color-paper-dim: var(--paper-dim);
+  --color-brass: var(--brass);
+  --color-brass-bright: var(--brass-bright);
+  --color-brick: var(--brick);
+  --color-brick-bright: var(--brick-bright);
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--brass);
+  color: var(--ink);
+}
